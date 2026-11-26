@@ -1,0 +1,20 @@
+[project]
+name = "my-agent"
+version = "0.1.0"
+description = "Cross-platform terminal coding agent"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai",
+    "rich",
+    "prompt_toolkit",
+    "typer",
+    "platformdirs",
+    "pydantic",
+]
+
+[project.scripts]
+my-agent = "my_agent.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
